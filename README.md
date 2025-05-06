@@ -1,9 +1,9 @@
-# CursorUsage 📊
+# <img src="gitassets/cursorusage.png" alt="CursorUsage Icon" width="32" height="32"> CursorUsage
 
 A macOS menu bar application that monitors and displays your Cursor AI usage statistics.
 
 <div align="center">
-  <img src="gitassets/cursorusage.png" alt="CursorUsage Icon" width="128" height="128">
+  <p><i>Demo video coming soon</i></p>
 </div>
 
 ## ✨ Features
