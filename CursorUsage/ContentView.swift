@@ -14,9 +14,6 @@ struct ContentView: View {
     // Use environment to open windows
     @Environment(\.openWindow) private var openWindow
     
-    // State for disclaimer visibility
-    @State private var showMAXDisclaimer: Bool = UserDefaults.standard.object(forKey: "showMAXDisclaimer") as? Bool ?? true
-    
     // Timer to auto-dismiss error messages
     @State private var errorTimer: Timer?
     
@@ -275,39 +272,6 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Current Usage")
                             .font(.headline)
-                        
-                        // Disclaimer about MAX models - moved here and made more prominent
-                        if showMAXDisclaimer {
-                            HStack(alignment: .top) {
-                                VStack(alignment: .leading, spacing: 3) {
-                                    Text("Important:")
-                                        .font(.subheadline)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.orange)
-                                    
-                                    Text("Usage calculations may be inaccurate when using MAX models as Cursor API doesn't provide this information. We recommend focusing on \"Total Requests\" section and configuring your \"Monthly spending limit\" in Settings.")
-                                        .font(.subheadline)
-                                        .foregroundColor(.orange)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                }
-                                
-                                Spacer()
-                                
-                                Button {
-                                    showMAXDisclaimer = false
-                                    // Save this preference to UserDefaults
-                                    UserDefaults.standard.set(false, forKey: "showMAXDisclaimer")
-                                    UserDefaults.standard.synchronize()
-                                } label: {
-                                    Image(systemName: "xmark.circle.fill")
-                                        .foregroundColor(.secondary)
-                                }
-                            }
-                            .padding(8)
-                            .background(Color.orange.opacity(0.1))
-                            .cornerRadius(6)
-                            .padding(.bottom, 8)
-                        }
                         
                         // Progress bar for current usage
                         let usageProgress = calculateProgress(
