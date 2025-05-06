@@ -3,7 +3,7 @@
 A macOS menu bar application that monitors and displays your Cursor AI usage statistics.
 
 <div align="center">
-  <video src="gitassets/cursorusage.mp4" controls width="600"></video>
+  <p><i>Demo video coming soon</i></p>
 </div>
 
 ## ✨ Features
