@@ -1,32 +1,34 @@
-# CursorUsage
+# CursorUsage 📊
 
 A macOS menu bar application that monitors and displays your Cursor AI usage statistics.
 
-![Screenshot of CursorUsage](gitassets/cursorusage.png)
+<div align="center">
+  <img src="gitassets/cursorusage.png" alt="CursorUsage Icon" width="128" height="128">
+</div>
 
-## Features
+## ✨ Features
 
-- Live display of Cursor AI usage metrics directly in your menu bar
-- View detailed usage information including:
+- 📈 Live display of Cursor AI usage metrics directly in your menu bar
+- 🔍 View detailed usage information including:
   - Premium request count and limits
   - Current usage costs
   - Usage limits and refresh dates
-- Automatic data refresh every 30 minutes
-- User authentication via Cursor session token
-- Clean, native macOS menu bar interface
+- 🔄 Automatic data refresh every 30 minutes
+- 🔐 User authentication via Cursor session token
+- 💻 Clean, native macOS menu bar interface
 
-## Requirements
+## 🔧 Requirements
 
 - macOS 15.0 or later
 - An active Cursor account
 
-## Installation
+## 📥 Installation
 
 1. Download the latest release from the [Releases](https://github.com/Natxo09/CursorUsage/releases) page
 2. Move the CursorUsage app to your Applications folder
 3. Launch the application
 
-## Setup and Authentication
+## 🚀 Setup and Authentication
 
 When you first launch CursorUsage, you'll need to authenticate with your Cursor account:
 
@@ -44,7 +46,7 @@ When you first launch CursorUsage, you'll need to authenticate with your Cursor 
 4. Find "WorkosCursorSessionToken" and copy its value
 5. Paste this value into the authentication field in CursorUsage settings
 
-## Usage
+## 📱 Usage
 
 Once authenticated, CursorUsage will display your current usage statistics in the menu bar:
 
@@ -57,7 +59,7 @@ Click on the menu bar icon to see detailed information including:
 - Current billing amount
 - Usage limit and days until refresh
 
-## Build from Source
+## 👨‍💻 Build from Source
 
 ### Prerequisites
 - Xcode 15 or later
@@ -78,15 +80,15 @@ open CursorUsage.xcodeproj
 
 3. Build and run the application
 
-## Privacy
+## 🔒 Privacy
 
 CursorUsage only stores your Cursor session token locally on your device and does not share any data with third parties. All usage data is retrieved directly from Cursor's official APIs.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 👏 Acknowledgments
 
 - Built with SwiftUI
-- Developed by Ignacio Palacio (Natxo)
+- Developed by [Ignacio Palacio (Natxo)](https://natxo.dev)
